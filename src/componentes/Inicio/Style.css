@@ -1,0 +1,204 @@
+
+/* FONDO GENERAL */
+body {
+  margin: 0;
+  background: #101216;
+  color: #f1f5f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTENEDOR */
+.tinder-container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 30px 16px 120px;
+  background: radial-gradient(circle at top, #202b30, #101216 65%);
+}
+
+/* TITULO */
+.tinder-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tinder-header h1 {
+  font-size: 30px;
+  margin: 0 0 8px;
+  color: #f1f5f9;
+}
+
+.tinder-header h1 span {
+  color: #7ee787;
+}
+
+.tinder-header p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* CONTENEDOR DE TARJETA */
+.tinder-card-container {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+/* TARJETA */
+.tinder-card {
+  overflow: hidden;
+  background: #20242d;
+  border: 1px solid #343b49;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  user-select: none;
+}
+
+/* IMAGEN */
+.tinder-imagen {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #272e32;
+  pointer-events: none;
+}
+
+/* INFORMACION */
+.tinder-info {
+  padding: 20px;
+}
+
+.tinder-id {
+  color: #7ee787;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tinder-info h2 {
+  margin: 8px 0;
+  font-size: 27px;
+  color: #ffffff;
+}
+
+.tinder-info p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.tinder-info strong {
+  color: #7ee787;
+}
+
+/* BOTONES */
+.tinder-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 24px 0 15px;
+}
+
+.tinder-botones button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #20242d;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.tinder-botones button:hover {
+  transform: scale(1.1);
+}
+
+.btn-dislike {
+  color: #fb7185;
+  border: 2px solid #fb7185;
+}
+
+.btn-dislike:hover {
+  box-shadow: 0 0 20px rgba(251, 113, 133, 0.3);
+}
+
+.btn-like {
+  color: #7ee787;
+  border: 2px solid #7ee787;
+}
+
+.btn-like:hover {
+  box-shadow: 0 0 20px rgba(126, 231, 135, 0.3);
+}
+
+/* AYUDA */
+.tinder-ayuda {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* FIN DE PERSONAJES */
+.tinder-fin {
+  max-width: 390px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #20242d;
+  border: 1px solid #343b49;
+  border-radius: 20px;
+}
+
+.tinder-fin h2 {
+  color: #7ee787;
+}
+
+.tinder-fin p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.tinder-fin button,
+.tinder-container > button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #7ee787;
+  color: #101216;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+  .tinder-container {
+    padding: 22px 14px 115px;
+  }
+
+  .tinder-header h1 {
+    font-size: 25px;
+  }
+
+  .tinder-card {
+    border-radius: 20px;
+  }
+
+  .tinder-info {
+    padding: 16px;
+  }
+
+  .tinder-info h2 {
+    font-size: 23px;
+  }
+
+  .tinder-botones button {
+    width: 58px;
+    height: 58px;
+    font-size: 26px;
+  }
+}

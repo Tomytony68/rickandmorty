@@ -99,7 +99,7 @@ function Favoritos() {
   return (
     <div className="favoritos-rm-container">
       <header className="favoritos-rm-header">
-        <h1>❤️ Mis Favoritos</h1>
+        <h1>Mis Favoritos</h1>
         <p>Los personajes de tu multiverso</p>
       </header>
 

@@ -175,3 +175,140 @@
     font-size: 14px;
   }
 }
+
+/* BUSCADOR DE FAVORITOS */
+.favoritos-filtros {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 28px;
+  padding: 18px;
+  box-sizing: border-box;
+  background: #1a1e26;
+  border: 1px solid #343b49;
+  border-radius: 16px;
+}
+
+/* CAMPO DE BUSQUEDA */
+.favoritos-busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  background: #101216;
+  border: 1px solid #3b4352;
+  border-radius: 10px;
+  transition: border-color 0.2s ease;
+}
+
+.favoritos-busqueda:focus-within {
+  border-color: #7ee787;
+}
+
+.favoritos-busqueda span {
+  font-size: 18px;
+}
+
+.favoritos-busqueda input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 0;
+  color: #f1f5f9;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.favoritos-busqueda input::placeholder {
+  color: #8b95a5;
+}
+
+/* SELECTORES */
+.favoritos-selectores {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.favoritos-selectores select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 10px;
+  color: #e5e7eb;
+  background: #252a35;
+  border: 1px solid #3b4352;
+  border-radius: 9px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+.favoritos-selectores select:focus {
+  border-color: #7ee787;
+}
+
+.favoritos-selectores option {
+  color: #f1f5f9;
+  background: #252a35;
+}
+
+/* CONTADOR Y LIMPIEZA */
+.favoritos-filtros-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.favoritos-limpiar {
+  padding: 9px 14px;
+  color: #7ee787;
+  background: #202d25;
+  border: 1px solid #3b6545;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.favoritos-limpiar:hover {
+  background: #2a4030;
+  transform: translateY(-1px);
+}
+
+/* UNIVERSO U ORIGEN EN LA TARJETA */
+.favorito-contenido .favorito-universo {
+  margin: 5px 0 10px;
+  color: #c4b5fd;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 600px) {
+  .favoritos-filtros {
+    padding: 13px;
+    margin-bottom: 20px;
+  }
+
+  .favoritos-selectores {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .favoritos-selectores select {
+    padding: 12px;
+  }
+
+  .favoritos-filtros-pie {
+    align-items: flex-start;
+  }
+}
+
